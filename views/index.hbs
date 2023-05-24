@@ -1,0 +1,26 @@
+<form action="/" method="POST">
+  <input type="text" placeholder="輸入網址..." name="name">
+  <button type="submit">縮址</button>
+</form>
+
+  {{#if address}}
+  <div >
+    <code>{{name}}</code><span class="mr-2">縮址後是 : ⬇ ⬇ ⬇</span><br>
+    <code>http://localhost:3000/{{address}}</code>
+  </div>
+  {{/if}}
+
+  {{#if error}}
+    <code>{{error}}</code>
+  {{/if}}
+
+<!--我是註解 
+<ul>
+  {{#each todos}}
+    <li>
+      {{this.name}}
+      {{this.address}}
+    </li>
+  {{/each}}
+</ul>
+-->
